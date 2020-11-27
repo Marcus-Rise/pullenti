@@ -6,5 +6,5 @@ build:
 up: build
 	docker run -p 8080:8081 --name $IMAGE $IMAGE
 
-up-with-compose:
+up-compose:
 	docker-compose up -d --build
