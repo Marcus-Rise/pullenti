@@ -1,9 +1,14 @@
 version: "3.4"
 
 services:
-  #  client:
-  #    build:
-  #      context: pullenti-client
+  app:
+    build:
+      context: .
+      target: app_dev
+    ports:
+      - 3000:5000
+    volumes:
+      - ./app:/usr/src/app
 
   server:
     build:
